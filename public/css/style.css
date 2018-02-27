@@ -1,0 +1,102 @@
+body {
+  background: #EEEEEE;
+}
+
+.main-container {
+  width: 80%;
+  margin: 10px auto;
+}
+
+/* Navbar nuances*/
+
+.navbar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#main-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+    display: inline-block;
+    color: #9E9E9E;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Merriweather";
+    font-size: 1.5em;
+    -webkit-transition: color 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out;
+    -o-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out;
+}
+
+li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  margin-top: 2px;
+  height: 2px;
+  background: #000;
+  -webkit-transition: width 0.2s ease-out;
+  -moz-transition: width 0.2s ease-out;
+  -o-transition: width 0.2s ease-out;
+  transition: width 0.2s ease-out;
+}
+
+li a:hover {
+    color: #424242;
+    -webkit-transition: color 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out;
+    -o-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out;
+}
+
+li a:hover::after {
+  width: 100%;
+  -webkit-transition: width 0.2s ease-out;
+  -moz-transition: width 0.2s ease-out;
+  -o-transition: width 0.2s ease-out;
+  transition: width 0.2s ease-out;
+}
+
+/* Post list */
+
+.post-list {
+  background: #FAFAFA;
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px 20px 10px 20px;
+}
+
+.post-minor-detail {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.post-heading {
+  color: #607D8B;
+}
+
+.post {
+  margin-bottom: 30px;
+  padding-left: 10px;
+  border-left: 2px solid #BDBDBD;
+  font-family: "Open Sans";
+}
